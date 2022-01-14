@@ -411,6 +411,12 @@
     },
     {
       "files": [
+        "css/firefox/whatsnew/colorways.scss"
+      ],
+      "name": "firefox_colorways"
+    },
+    {
+      "files": [
         "css/firefox/privacy/common.scss"
       ],
       "name": "firefox-privacy-common"
@@ -1135,6 +1141,13 @@
         "js/firefox/whatsnew/whatsnew-96-en-experiment.js"
       ],
       "name": "firefox_whatsnew_96_en_experiment"
+    },
+    {
+      "files": [
+        "js/base/uitour-lib.js",
+        "js/firefox/whatsnew/colorways.js"
+      ],
+      "name": "firefox_colorways"
     },
     {
       "files": [

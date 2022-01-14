@@ -1,0 +1,36 @@
+{#
+  This Source Code Form is subject to the terms of the Mozilla Public
+  License, v. 2.0. If a copy of the MPL was not distributed with this
+  file, You can obtain one at https://mozilla.org/MPL/2.0/.
+#}
+
+{% extends "firefox/whatsnew/base.html" %}
+
+{% block page_title %}Colorways UITour demo{% endblock %}
+
+{% block page_css %}
+  {{ css_bundle('firefox_colorways') }}
+{% endblock %}
+
+{% block site_header %}{% endblock %}
+
+{% block content %}
+<main class="content-wrapper mzp-t-firefox">
+  <section class="wnp-content-main">
+    <div class="mzp-l-content mzp-t-content-md">
+      <h1>Colorways demo</h1>
+      <p>
+        Note: This demo page will only work correctly in Firefox 97 and above.
+        You will also need to add the demo server to <code>browser.uitour.testingOrigins</code>.
+        See the <a href="https://bedrock.readthedocs.io/en/latest/uitour.html#local-development"> UITour docs</a>
+        for more information.
+      </p>
+    </div>
+    <div class="colorways-container mzp-l-content mzp-l-columns mzp-t-columns-three"></div>
+  </section>
+</main>
+{% endblock %}
+
+{% block js %}
+  {{ js_bundle('firefox_colorways') }}
+{% endblock %}

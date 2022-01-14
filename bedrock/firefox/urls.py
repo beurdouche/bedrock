@@ -83,6 +83,7 @@ urlpatterns = (
     path("firefox/installer-help/", views.InstallerHelpView.as_view(), name="firefox.installer-help"),
     re_path(firstrun_re, views.FirstrunView.as_view(), name="firefox.firstrun"),
     re_path(whatsnew_re, views.WhatsnewView.as_view(), name="firefox.whatsnew"),
+    page("firefox/whatsnew/colorways", "firefox/whatsnew/colorways.html", ftl_files=["firefox/whatsnew/whatsnew"]),
     # Release notes
     re_path(f"^firefox/(?:{platform_re}/)?(?:{channel_re}/)?notes/$", bedrock.releasenotes.views.latest_notes, name="firefox.notes"),
     path("firefox/nightly/notes/feed/", bedrock.releasenotes.views.nightly_feed, name="firefox.nightly.notes.feed"),
